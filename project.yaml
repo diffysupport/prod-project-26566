@@ -1,5 +1,5 @@
 basic:
-    name: 'https://www.sinaihealth.ca/'
+    name: 'Sinai Health'
     environments:
         production: 'https://www.sinaihealth.ca/'
         staging: 'https://sinaihealthstg.prod.acquia-sites.com/'
