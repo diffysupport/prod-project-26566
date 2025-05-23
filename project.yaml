@@ -2,8 +2,8 @@ basic:
     name: 'https://www.sinaihealth.ca/'
     environments:
         production: 'https://www.sinaihealth.ca/'
-        staging: 'https://sinaihealthdev.prod.acquia-sites.com/'
-        development: ''
+        staging: 'https://sinaihealthstg.prod.acquia-sites.com/'
+        development: 'https://sinaihealthdev.prod.acquia-sites.com/'
     breakpoints:
         - 640
         - 1024
@@ -36,7 +36,19 @@ advanced:
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10
